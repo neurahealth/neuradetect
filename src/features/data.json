@@ -1,0 +1,116 @@
+
+ [{"all_results":  {
+  
+        "BI_RADS_prediction":{
+        "BI_RADS_one": "25.49",
+        "BI_RADS_two": "60.19",
+        "BI_RADS_zero": "15.31"
+       } ,
+       "Density_prediction": {
+        "Almost_entirely_fatty": "7.63",
+        "Extremely_dense": "3.86",
+        "Heterogeneously_dense": "33.61",
+        "Scattered_areas_of_fibroglandular_density": "54.90"
+      },
+      "Image_Predictions": {
+        "left_benign": "0.2345",
+        "left_malignant": "0.0291",
+        "right_benign": "0.5723",
+        "right_malignant": "0.1052"
+      },
+      "date_time_userId": {
+        "date": "2020-03-04",
+        "time": "04:09:58",
+        "userId": ""
+      }
+    
+
+   
+ }},
+ 
+ 
+ {"all_results":  {
+  
+    "BI_RADS_prediction":{
+    "BI_RADS_one": "25.49",
+    "BI_RADS_two": "60.19",
+    "BI_RADS_zero": "15.31"
+   } ,
+   "Density_prediction": {
+    "Almost_entirely_fatty": "7.63",
+    "Extremely_dense": "3.86",
+    "Heterogeneously_dense": "33.61",
+    "Scattered_areas_of_fibroglandular_density": "54.90"
+  },
+  "Image_Predictions": {
+    "left_benign": "0.2345",
+    "left_malignant": "0.0291",
+    "right_benign": "0.5723",
+    "right_malignant": "0.1052"
+  },
+  "date_time_userId": {
+    "date": "2020-03-04",
+    "time": "04:09:58",
+    "userId": ""
+  }
+
+
+
+}},
+{"all_results":  {
+  
+    "BI_RADS_prediction":{
+    "BI_RADS_one": "25.49",
+    "BI_RADS_two": "60.19",
+    "BI_RADS_zero": "15.31"
+   } ,
+   "Density_prediction": {
+    "Almost_entirely_fatty": "7.63",
+    "Extremely_dense": "3.86",
+    "Heterogeneously_dense": "33.61",
+    "Scattered_areas_of_fibroglandular_density": "54.90"
+  },
+  "Image_Predictions": {
+    "left_benign": "0.2345",
+    "left_malignant": "0.0291",
+    "right_benign": "0.5723",
+    "right_malignant": "0.1052"
+  },
+  "date_time_userId": {
+    "date": "2020-03-04",
+    "time": "04:09:58",
+    "userId": ""
+  }
+
+
+
+}},
+{"all_results":  {
+  
+    "BI_RADS_prediction":{
+    "BI_RADS_one": "25.49",
+    "BI_RADS_two": "60.19",
+    "BI_RADS_zero": "15.31"
+   } ,
+   "Density_prediction": {
+    "Almost_entirely_fatty": "7.63",
+    "Extremely_dense": "3.86",
+    "Heterogeneously_dense": "33.61",
+    "Scattered_areas_of_fibroglandular_density": "54.90"
+  },
+  "Image_Predictions": {
+    "left_benign": "0.2345",
+    "left_malignant": "0.0291",
+    "right_benign": "0.5723",
+    "right_malignant": "0.1052"
+  },
+  "date_time_userId": {
+    "date": "2020-03-04",
+    "time": "04:09:58",
+    "userId": ""
+  }
+
+
+
+}}
+ ]

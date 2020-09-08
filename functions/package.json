@@ -1,0 +1,36 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "changeToProd": "firebase use production",
+    "changeToDev": "firebase use development",
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "@firebase/app": "^0.5.0",
+    "@google-cloud/logging": "^6.0.0",
+    "@google-cloud/pubsub": "^1.2.0",
+    "@google-cloud/storage": "^4.1.1",
+    "@google-cloud/vision": "^1.6.0",
+    "firebase": "^7.6.1",
+    "firebase-admin": "^8.9.2",
+    "firebase-functions": "^3.3.0",
+    "firebase-tools": "^7.5.0",
+    "googleapis": "^45.0.0",
+    "promise": "^8.0.3",
+    "stripe": "^7.14.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.7",
+    "mocha": "^7.0.1"
+  }
+}

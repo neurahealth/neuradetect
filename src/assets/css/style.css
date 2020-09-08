@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.primary-color{
+    color:  #0E425C;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.loginContainer{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.loginWrapper{
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.62), rgba(22, 22, 22, 0.3)), url(../images/neuraDetectImage.svg),rgba(0,0,0,0.6);
+    /* background:linear-gradient(0deg, rgba(64, 99, 136, 0.62), rgba(255, 0, 150, 0.3)), url(../images/neuraDetectImage.svg),rgba(0,0,0,0.6); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-size: 120% 110%; */
+    background-size: cover;
+    background-position: center center;
+    animation: shrink 4s ;
+    transition: 4s all;
+}
+@keyframes shrink {
+  0% {
+    background-size: 120%;
+    transition: 3s all;
+  }
+  100% {
+    background-size: 100%;
+   
+  }
+}
+
+.loginContainerWrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loginTitle{
+    font-size: 45px;
+    font-family: Montserrat;
+    color: #fff;
+    line-height: 40px;
+    padding: 5% 0;
+    font-weight: 400;
+}
+.loginDesc{
+    width: 60%;
+    margin: auto;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: Montserrat;
+    color: #fff;
+    font-weight: 300;
+}
+.loginButtonWrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+.loginButton{
+    cursor: pointer;
+    width: 350px;
+    border: 1px solid #fff;
+    margin: 2%;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    line-height: 28px;
+    font-weight: 300;
+    background: linear-gradient(to right,#046695 50%,  #0000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    font-family: Montserrat;
+}
+.loginButton:hover{    
+     background-position: left bottom;
+}
+.header{
+    background: #FFF;
+    /* box-shadow: 0px 3px 6px #000; */
+}
+.footer{
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 8%;
+    background: #0E425C;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: Montserrat;
+}
+
+.signOutWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15% !important;
+    left: auto;
+    right: 15px;
+     position: absolute;
+     width: fit-content !important;
+}
+.btn-signOut {
+    padding: 0 0 0 15px ;
+    color: #046695;
+    margin-left: auto;
+    background: #0000;
+    font-size: 18px;
+    width: fit-content !important;
+    left: auto;
+    right: 5px;
+    border:none
+}
+.btn-signOutBtn {
+    padding: 0 15px;
+    color: #046695;
+    margin-left: auto;
+    background: #0000;
+    font-size: 18px;
+    width: fit-content !important;
+    left: auto;
+    right: 15px;
+    border:none;
+    text-transform: capitalize;
+}
+.btn-signOut:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    z-index: 0;
+}
+
+
+/* home page css */
+#root{
+    background: #f5f5f5;
+}
+.pageWrapper{
+    height:100%
+}
+.homeWrapper{
+ background: #F5F5F5;
+  width: 100%;
+  height:100%;
+  display: flex;
+  height: calc(100% - 122px);
+ 
+ 
+}
+
+.uploadWarapper {
+    max-width: 100% !important;
+    margin: 0;
+    border:1px dashed #046695;
+    padding-top: 20px;
+}
+
+.upload-deatils,.result-deatils{
+    background: #FFF;
+    width: 100%;
+    height:100%;
+    margin: 15px;
+    padding: 20px;
+    position: inherit;
+    height: 95%;
+}
+
+.upload-deatils,.result-deatils{
+  
+    overflow: auto;
+}
+.uploadCol{
+    color: #046695;
+    border: 1px solid #046695;
+    width:auto;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    min-height: 100%;
+}
+
+.uploadCol input{
+margin: auto;
+}
+
+
+.title{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    color: #046695;
+}
+
+.title-desc{
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-bottom: 1.5%;
+    width: 70%;
+}
+
+.welcomeUser{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.user{
+    color: #046695;
+}
+.progressWrap{
+    margin-top: 5%;
+}
+.progres{
+    margin-bottom: 0;
+}
+.paymentButton{
+    cursor: pointer;
+    width: 250px;
+    border: 1px solid #fff;
+    margin: 2%;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    line-height: 28px;
+    font-weight: 300;
+    background-color: #046695;
+    font-family: Montserrat;
+    float: right;
+}
+.popup { 
+  z-index: 1200; 
+  position: fixed;  
+  width: 100%;  
+  height: 100%;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  margin: auto;  
+  background-color: rgba(0,0,0, 0.5);  
+}  
+.popupInner {  
+  position: absolute;  
+  left: 25%;  
+  right: 25%;  
+  top: 5%;  
+  bottom: 5%;  
+  margin: auto;  
+  border-radius: 5px;  
+  background: white;  
+  max-width: 400px;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.labelWrapp {
+    background: #046695;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    padding: 10px;
+    font-family: Montserrat;
+}
+.progressWrap .progress {
+    /* margin-bottom: 0; */
+    margin: 3px;
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+}   
+.progress-bar{
+    background-color: #046695;
+    font-size: 9px;
+}
+.thumbnil-dicom{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-repeat: no-repeat !important;
+    margin: auto;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.popupLogo{
+    min-width: 300px;
+    height: 24px;
+}
+
+.closeBtn{
+    width: 15px;
+    height: 15px;
+}
+
+.btnClose{
+    background: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Montserrat;
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+    line-height: 28px;
+    z-index: 99999;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.popupWrappre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+button[disabled]{
+    cursor: default;
+    background: #dddddd;
+}
+
+.paymentButtonWrapper{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-bottom: 12px;
+}
+
+.sr-payment-form button{    
+  overflow-x: unset; 
+  overflow-y: unset;
+  white-space: unset;
+
+}
+
+.modalHead {
+    font-size: 25px;
+    color: #046695;
+    margin: 5% 0;  
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.modalDesc {
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+}
+
+.paymentDesc {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    color: #046695;
+    margin: 5% 0;
+    font-weight: 600;
+}
+
+.paymentHead {
+    font-size: 25px;
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.sr-combo-inputs-row input#name,input#amount,.sr-input.sr-card-element {
+    border: 1.5px solid #046695;
+}
+.paymentInputWrapper{
+    margin: 0 !important;
+}
+button.closeBtn {
+    padding: 12px;
+    border-radius: 25px;
+    line-height: 0;
+    display: flex;
+    background: #000;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.sr-payment-form button:hover {
+    color: #fff;
+}
+span.user {
+    text-transform: capitalize;
+}
+.btnPayemnt{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Montserrat;
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+    line-height: 28px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.successPayment{
+    width: 30%;
+    margin: 10%;
+}
+.homeMenu{
+    background: #046695;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 2%;
+}
+
+.homeMenu:hover,.homeMenu.icon-menu:hover,.homeMenu.homeMenu.icon-menu:active{
+    background: #046695;
+    color: #fff;
+    text-decoration: none;
+    filter: none;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    text-decoration: none;
+    background-color: #046695;
+    color: #fff !important;
+}
+
+.MuiCollapse-wrapper{
+    padding-left: 15px 
+  }
+
+  .MuiTypography-body1{
+      font-size: 1.5rem !important;   
+      font-family: Montserrat !important; ;
+}
+
+.MuiListItemIcon-root{
+    min-width: 35px !important;
+}
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1.4em !important;
+    height: 1.4em !important;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+a.MuiButtonBase-root.MuiListItem-root.paddingLeft.MuiListItem-gutters.MuiListItem-button:focus,
+a.MuiButtonBase-root.MuiListItem-root.paddingLeft.MuiListItem-gutters.MuiListItem-button:hover{
+    filter:brightness(1);
+    color: #fff !important
+}
+
+.dropdown-item a:hover {
+    color: #fff;
+    filter: brightness(1);
+    text-decoration: none;
+    transition:none!important
+}
+a{
+    transition:none!important  
+}
+.btnAddIcon{
+    background-image: url(../images/btnAdd.png);
+    background-repeat: no-repeat;
+
+}
+
+.btnUpdateIcon{
+    background-image: url(../images/btnUpdate.png);
+    background-repeat: no-repeat;
+}
+.btnAddIcon,.btnUpdateIcon{
+    height: 35px;
+    width: 35px;
+    background-size: contain;
+    margin-right: 10px;
+    
+}
+
+label.form-label {
+    font-weight: 500;
+}
+
+/* .active {
+    color: #046695;
+} */
+
+a.active {
+    color: #1b9ee0;
+}
+
+.checkboxWrapper {
+    /* border-bottom: 1px solid #888; */
+    padding:15px 0 0 0}
+.checkboxWrapper .check-desc {
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #046695;
+}
+
+.checkboxWrapper .check-desc label{
+    font-weight: 500;
+}
+
+.checkboxWrapper .check-desc input[type="checkbox"] {
+    margin: 0 10px 0 0;
+    width: 15px;
+    height: 15px;
+}
+.Toastify__toast-body{
+    font-size: 14px;
+    font-family: Montserrat;
+}
+
+.fadeout {
+    opacity: 0;
+    transition-delay: 0.3s;
+    transition-property: opacity;
+    transition-duration: 2s;
+ 
+}
+
+#displayError{
+    margin-left: 120px;
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#displayError img{
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin-left: 161px;
+    margin-top: 40px;
+}
+
+/* Loader Css */
+
+#displayLoader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -75px 0 0 100px;
+  border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 60px;
+    height: 60px;   
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.table{
+    border: 1px solid #e8e8e8 !important;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+}
+thead {
+    background: #046695;
+    color: #fff;
+    font-size: 12px;
+    position: inherit;
+    width: auto;
+    font-family: Montserrat;
+    text-align: inherit;
+}
+
+
+
+
+tbody {
+    display:block;
+    overflow-y:scroll;
+    max-height: 350px;
+    overflow-x: hidden;
+}
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout: fixed;
+   /* even columns width , fix width of table too*/
+}
+/* th, td {
+    min-width: 150px;
+} */
+
+tbody tr:hover {
+    background: #b3b3b3;
+    color: #fff;
+    text-decoration: none;
+}
+tbody tr td a{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+tbody tr td:first-child,
+tr th:first-child{
+    width: 60px;
+}
+
+input.inputText {
+    height: 38px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Montserrat;
+    border: 1px solid #046695;
+    padding: 5px 10px;
+    width: 100%;
+    margin-right: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+input.inputEmail {
+    height: 38px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Montserrat;
+    border: 1px solid #046695;
+    padding: 5px 10px;
+    width: 100%;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.disabled {
+    pointer-events: none;
+}
+.disabled label input, .disabled label {
+    opacity: 0.5;
+    color: gray;
+}
+
+/* .ril__outer{
+    opacity: 0.5;
+} */
+
+.cursor{
+    cursor: pointer;
+}
